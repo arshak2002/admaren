@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "050fc9b5-7f18-4d71-93a4-0a138352982a",
+		"name": "admaren",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "arshak",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "default"
+						},
+						{
+							"key": "first_name",
+							"value": "arshak",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "arshakk2002@gmail.com",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "arshak",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get or create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token d7745ac6247555f4ff3efffb2756cd689baf4f2b",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "hai",
+							"type": "default"
+						},
+						{
+							"key": "content",
+							"value": "how are you",
+							"type": "default"
+						},
+						{
+							"key": "tag",
+							"value": "tag1",
+							"type": "default"
+						},
+						{
+							"key": "user",
+							"value": "1",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/snippets/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"snippets",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tags",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "retrievetag",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
